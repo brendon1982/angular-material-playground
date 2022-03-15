@@ -1,0 +1,7 @@
+@import "../../variables.scss";
+
+.fixed-botton-end {
+  position: fixed;
+  bottom: 10px;
+  @include sideStartValue(calc(10px + $scrollbarWidth))
+}

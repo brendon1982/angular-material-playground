@@ -1,0 +1,13 @@
+$scrollbarWidth: 17px;
+// TODO figure out how to set this, or have different variable files load for different translations so that this swapps automatically when
+//      angular compiles for different localizations.
+$direction: rtl;
+
+@mixin sideStartValue($value) {
+  @if $direction != rtl {
+    right: $value;
+  }
+  @else {
+    left: $value
+  }
+}
